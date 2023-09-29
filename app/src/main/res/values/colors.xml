@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
     // custom colors
+    <color name="color_Primary">#103CDF</color>
     <color name="android_default_color">#808080</color>
     <color name="lighter_default_color">#D8D8D8</color>
     <color name="extra_lighter_default_color">#EFEFEF</color>
