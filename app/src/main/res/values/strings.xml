@@ -13,4 +13,19 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus risus eget tincidunt tempus. Nullam pharetra sollicitudin sapien, quis viverra quam commodo non.</string>
     <string name="lorem_ipsum2"> Nunc justo ligula, tincidunt vel dignissim commodo, elementum vitae sem. Pellentesque eu massa justo. Donec vitae gravida massa.</string>
+    <string name="log_in">Login</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="log_in_with_google">Login with Google</string>
+    <string name="new_user">New to Literature Review AI?<font color="#103CDF"><b> Create account</b></font></string>
+    <string name="old_user">Already have an account?<font color="#103CDF"><b> Login</b></font></string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="create_account">Create account</string>
+    <string name="enter_name">Enter name</string>
+    <string name="terms">By continuing, you agree to our<b><font color="#103CDF"> terms of service.</font></b></string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="name">Name</string>
+    <string name="hello_example_com">hello@example.com</string>
+    <string name="enter_password">Enter password</string>
 </resources>

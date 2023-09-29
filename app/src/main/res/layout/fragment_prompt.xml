@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="30dp"
     android:background="@drawable/text_background"
-    tools:context=".PromptFragment">
+    tools:context=".ui.PromptFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -82,7 +82,7 @@
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:endIconDrawable="@drawable/send_icon"
+        app:endIconDrawable="@drawable/ic_send"
         app:endIconMode="custom"
         app:boxBackgroundColor="@color/white"
         app:boxCornerRadiusTopStart="10dp"

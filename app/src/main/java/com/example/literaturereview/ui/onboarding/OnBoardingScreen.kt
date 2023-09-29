@@ -1,4 +1,4 @@
-package com.example.literaturereview.Screens
+package com.example.literaturereview.ui.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
-import com.example.literaturereview.Adapters.ViewPagerAdapter
+import com.example.literaturereview.adapter.ViewPagerAdapter
 import com.example.literaturereview.R
 import com.example.literaturereview.databinding.FragmentOnBoardingScreenBinding
 import com.google.android.material.tabs.TabLayout
@@ -15,9 +15,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class OnBoardingScreen : Fragment() {
 
-    lateinit var binding: FragmentOnBoardingScreenBinding
+    private lateinit var binding: FragmentOnBoardingScreenBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         binding = FragmentOnBoardingScreenBinding.inflate(inflater,container,false)
         return binding.root
@@ -37,24 +37,14 @@ class OnBoardingScreen : Fragment() {
                 findNavController().navigate(R.id.signUpFragment)
             }
 
-
-
-                //login btn
+                // login btn
                 btnLogin.setOnClickListener {
                 findNavController().navigate(R.id.loginFragment)
             }
-
-
-
         }
-
     }
 
-
-
-
-
-    fun showActiveFragment(tabLayout: TabLayout, viewPager2: ViewPager2){
+    private fun showActiveFragment(tabLayout: TabLayout, viewPager2: ViewPager2){
         TabLayoutMediator(tabLayout, viewPager2) { tab, positon ->
             when (positon) {
                 0 -> {

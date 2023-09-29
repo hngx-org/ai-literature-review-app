@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.literaturereview.SignUpFragment"
+        android:name="com.example.literaturereview.ui.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.literaturereview.LoginFragment"
+        android:name="com.example.literaturereview.ui.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -31,12 +31,12 @@
     </fragment>
     <fragment
         android:id="@+id/promptFragment"
-        android:name="com.example.literaturereview.PromptFragment"
+        android:name="com.example.literaturereview.ui.PromptFragment"
         android:label="fragment_prompt"
         tools:layout="@layout/fragment_prompt" />
     <fragment
         android:id="@+id/onBoardingScreen2"
-        android:name="com.example.literaturereview.Screens.OnBoardingScreen"
+        android:name="com.example.literaturereview.ui.onboarding.OnBoardingScreen"
         android:label="fragment_on_boarding_screen"
         tools:layout="@layout/fragment_on_boarding_screen" >
         <action
