@@ -3,19 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/promptFragment">
+    app:startDestination="@id/onBoardingScreen2">
 
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.literaturereview.ui.signup.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
-
         <action
-            android:id="@+id/action_signUpFragment_to_loginFragment3"
+            android:id="@+id/action_signUpFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
         <action
-            android:id="@+id/action_signUpFragment_to_promptFragment3"
+            android:id="@+id/action_signUpFragment_to_promptFragment"
             app:destination="@id/promptFragment" />
     </fragment>
     <fragment
@@ -23,17 +22,28 @@
         android:name="com.example.literaturereview.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
-
         <action
-            android:id="@+id/action_loginFragment_to_promptFragment4"
-            app:destination="@id/promptFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_signUpFragment3"
+            android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_promptFragment"
+            app:destination="@id/promptFragment" />
     </fragment>
     <fragment
         android:id="@+id/promptFragment"
         android:name="com.example.literaturereview.ui.prompt.PromptFragment"
         android:label="fragment_prompt"
         tools:layout="@layout/fragment_prompt" />
+    <fragment
+        android:id="@+id/onBoardingScreen2"
+        android:name="com.example.literaturereview.Screens.OnBoardingScreen"
+        android:label="fragment_on_boarding_screen"
+        tools:layout="@layout/fragment_on_boarding_screen" >
+        <action
+            android:id="@+id/action_onBoardingScreen2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_onBoardingScreen2_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
 </navigation>
