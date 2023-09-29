@@ -61,5 +61,9 @@ dependencies {
     kapt ("com.google.dagger:hilt-android-compiler:2.44")
 
     // kotlin coroutines
+}
 
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }

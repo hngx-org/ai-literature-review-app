@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
-import com.example.literaturereview.Adapters.ViewPagerAdapter
+import com.example.literaturereview.adapters.ViewPagerAdapter
 import com.example.literaturereview.R
 import com.example.literaturereview.databinding.FragmentOnBoardingScreenBinding
 import com.google.android.material.tabs.TabLayout

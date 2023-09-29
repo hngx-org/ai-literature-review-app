@@ -1,35 +1,40 @@
 package com.example.literaturereview.ui.prompt
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
 import com.example.literaturereview.databinding.CompletionListBinding
 import com.example.literaturereview.models.GenerationResult
 
-class MyAdapter(private val _context : Context) : ListAdapter<GenerationResult, MyAdapter.ViewHolder>() {
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = CompletionListBinding.inflate(
-            LayoutInflater.from(parent.context),
+class MyAdapter : ListAdapter<GenerationResult, MyAdapter.MyViewHolder>(DiffCallBack) {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val binding = CompletionListBinding.inflate(LayoutInflater.from(parent.context),
             parent,
             false
         )
-        return ViewHolder(binding)
+        return MyViewHolder(binding)
     }
 
-    override fun getItemCount(): Int {
-
-        // Todo - When I come back. Continue this.
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        val currentItem = getItem(position)
+        holder.bind(currentItem)
     }
 
-    override fun onBindViewHolder(holder: MyAdapter, position: Int) {
-
+    inner class MyViewHolder(private val binding : CompletionListBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(result : GenerationResult) {
+            binding.apply {
+                tVUserPrompt.text = result.prompt
+                tvCompletion.text = result.completion
+            }
+        }
     }
 
-    inner class ViewHolder(private val binding : CompletionListBinding) : ViewHolder(binding.root) {
-
-    }
-
-
+    object DiffCallBack : DiffUtil.ItemCallback<GenerationResult>() {
+        override fun areItemsTheSame(oldItem: GenerationResult, newItem: GenerationResult): Boolean =
+            oldItem.id == newItem.id
+        override fun areContentsTheSame(oldItem: GenerationResult, newItem: GenerationResult): Boolean =
+            oldItem == newItem
+        }
 }
