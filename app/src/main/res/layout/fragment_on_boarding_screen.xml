@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.onboarding.OnBoardingScreen">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,7 +20,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabIndicator"
             android:layout_width="wrap_content"
@@ -33,31 +31,23 @@
             app:tabGravity="center"
             app:tabIndicator="@null"
             app:layout_constraintBottom_toTopOf="@id/btnSignUp"
-            app:layout_constraintTop_toBottomOf="@id/viewPager2"
-            >
+            app:layout_constraintTop_toBottomOf="@id/viewPager2">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/active_background"
-                />
+                android:icon="@drawable/active_background" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/active_background"
-
-                />
+                android:icon="@drawable/active_background" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/active_background"
-
-                />
+                android:icon="@drawable/active_background" />
         </com.google.android.material.tabs.TabLayout>
-
-
 
         <Button
             android:id="@+id/btnSignUp"

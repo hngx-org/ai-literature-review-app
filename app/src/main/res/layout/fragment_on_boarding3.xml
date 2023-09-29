@@ -13,9 +13,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="16dp"
-            >
-
+            android:padding="16dp">
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/lottieAnimationView"
@@ -28,7 +26,6 @@
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 app:lottie_rawRes="@raw/ai" />
-
 
             <TextView
                 android:id="@+id/textView"
@@ -43,7 +40,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
-
 
             <TextView
                 android:id="@+id/textView2"
@@ -61,13 +57,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-
-
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
-
-
 </FrameLayout>

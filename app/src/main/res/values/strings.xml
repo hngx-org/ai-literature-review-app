@@ -28,4 +28,8 @@
     <string name="name">Name</string>
     <string name="hello_example_com">hello@example.com</string>
     <string name="enter_password">Enter password</string>
+    <string name="example_prompt">Example Prompt:</string>
+    <string name="second_example_prompt">Second Example Prompt:</string>
+    <string name="enter_prompt_here">Enter Prompt here</string>
+    <string name="literature_review_ai">Literature Review AI</string>
 </resources>

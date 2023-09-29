@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.SplashScreen">
 
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
         android:layout_width="260dp"
@@ -17,8 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/splash_screen"
-        />
+        app:lottie_rawRes="@raw/splash_screen" />
 
     <TextView
         android:id="@+id/AppNameTV"
@@ -26,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/marko_one"
-        android:text="Literature Review AI"
+        android:text="@string/literature_review_ai"
         android:textSize="35sp"
         android:theme="@style/textTheme"
         app:layout_constraintEnd_toEndOf="parent"
