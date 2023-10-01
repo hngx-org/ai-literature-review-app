@@ -133,6 +133,8 @@
         android:fontFamily="@font/lato_bold"
         android:padding="16dp"
         android:text="@string/login"
+        android:enabled="false"
+        android:alpha="0.5"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"
