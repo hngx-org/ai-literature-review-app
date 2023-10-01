@@ -23,6 +23,8 @@ class PromptFragment : Fragment() {
     ): View {
         _binding = FragmentPromptBinding.inflate(layoutInflater, container, false)
 
+        // Todo - When I come back tomorrow, I will continue working on the redesign of the fragment_prompt.xml
+
         adapter = MyAdapter()
         recyclerView = binding.rvCompletionList
         recyclerView.adapter = adapter
