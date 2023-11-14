@@ -1,10 +1,11 @@
 package com.example.literaturereview.adapters
 
+import android.app.Fragment
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.literaturereview.Fragments.OnBoarding1Fragment
-import com.example.literaturereview.Fragments.OnBoarding2Fragment
-import com.example.literaturereview.Fragments.OnBoarding3Fragment
+import com.example.literaturereview.ui.onboarding.OnBoarding1Fragment
+import com.example.literaturereview.ui.onboarding.OnBoarding2Fragment
+import com.example.literaturereview.ui.onboarding.OnBoarding3Fragment
 
 
 class ViewPagerAdapter(fa: Fragment): FragmentStateAdapter(fa) {

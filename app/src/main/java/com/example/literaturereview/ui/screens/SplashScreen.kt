@@ -1,4 +1,4 @@
-package com.example.literaturereview.Screens
+package com.example.literaturereview.ui.screens
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

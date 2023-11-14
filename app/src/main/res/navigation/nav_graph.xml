@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_prompt" />
     <fragment
         android:id="@+id/onBoardingScreen2"
-        android:name="com.example.literaturereview.Screens.OnBoardingScreen"
+        android:name="com.example.literaturereview.ui.screens.OnBoardingScreen"
         android:label="fragment_on_boarding_screen"
         tools:layout="@layout/fragment_on_boarding_screen" >
         <action

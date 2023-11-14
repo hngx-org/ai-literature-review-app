@@ -1,20 +1,20 @@
-package com.example.literaturereview.Fragments
+package com.example.literaturereview.ui.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.literaturereview.R
-import com.example.literaturereview.databinding.FragmentOnBoarding3Binding
+import com.example.literaturereview.databinding.FragmentOnBoarding1Binding
 
-class OnBoarding3Fragment : Fragment() {
 
-    lateinit var binding: FragmentOnBoarding3Binding
+class OnBoarding1Fragment : Fragment() {
+
+    lateinit var binding: FragmentOnBoarding1Binding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-      binding = FragmentOnBoarding3Binding.inflate(inflater,container,false)
+        binding = FragmentOnBoarding1Binding.inflate(inflater,container,false)
         return binding.root
     }
 

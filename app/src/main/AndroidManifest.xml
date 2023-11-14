@@ -14,10 +14,10 @@
         android:name=".di.LiteratureReviewApplication"
         tools:targetApi="31">
         <activity
-            android:name=".Screens.OnBoardingScreen"
+            android:name=".ui.screens.OnBoardingScreen"
             android:exported="false" />
         <activity
-            android:name=".Screens.SplashScreen"
+            android:name=".ui.screens.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

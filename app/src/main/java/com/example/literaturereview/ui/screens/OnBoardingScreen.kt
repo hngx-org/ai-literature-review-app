@@ -1,4 +1,4 @@
-package com.example.literaturereview.Screens
+package com.example.literaturereview.ui.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
